@@ -1,0 +1,97 @@
+.form_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  .form-control {
+    .task {
+      font-size: 25px;
+    }
+    .field {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 400px;
+      height: 30px;
+    }
+  }
+  .submit_btn {
+    margin-top: 30px;
+    width: 400px;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      90deg,
+      #020024 0%,
+      #090979 35%,
+      #00d4ff 100%
+    );
+    color: #fff;
+  }
+}
+
+.todo_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .todo_item {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      90deg,
+      #d50783 0%,
+      #ff0099 35%,
+      #fcaa43 100%
+    );
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &::before {
+      border: 5px solid black;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .checkbox {
+      margin-right: 20px;
+      font-size: 35px;
+      border-radius: 50%;
+      border: none;
+    }
+    .todo_msg {
+      color: #fff;
+      font-size: 18px;
+      font-size: 20px;
+    }
+    .completed_task {
+      text-decoration: line-through;
+    }
+    .btn1 {
+      margin-left: 20px;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      color: #fff;
+    }
+    .btn2 {
+      margin-left: 10px;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      color: #fff;
+
+      //   background-color: red;
+    }
+  }
+}
+
+.txt {
+  text-decoration: line-through;
+}
